@@ -1,0 +1,21 @@
+# Client side
+client/node_modules/
+client/build/
+client/.env
+client/logs/
+client/*.log
+client/coverage/
+client/.DS_Store
+client/.idea/
+client/.vscode/
+
+# Server side
+server/node_modules/
+server/logs/
+server/*.log
+server/.env
+server/coverage/
+server/dist/
+server/.DS_Store
+server/.idea/
+server/.vscode/
