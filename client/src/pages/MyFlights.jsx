@@ -63,16 +63,17 @@ const MyFlights = () => {
               <div key={reservation.id} className="flight-card">
                 <div className="flight-details">
                   <h2>
-                    {reservation.flightName} 
+                    {reservation.flightName} - <p>{reservation.userName}</p>
                   </h2>
                   <div className="flight-times">
                     <div>
+                      
                       <p className="flight-times-header"><LuPlaneTakeoff /> Departure</p>
                       <p className="flight-times-details">{formatDateTime(reservation.scheduleDateTime)}</p>
                       <p>Airport: {reservation.origins}</p>
                     </div>
                     <div className="flight-duration">
-                      <p><FaPlane /><br />{calculateFlightDuration(reservation.scheduleDateTime, reservation.estimatedLandingTime)} (Non Stop)</p>
+                      <p><FaPlane className="rotating-icon"/><br />{calculateFlightDuration(reservation.scheduleDateTime, reservation.estimatedLandingTime)} (Non Stop)</p>
                     </div>
                     <div>
                       <p className="flight-times-header"><LuPlaneLanding /> Arrival</p>

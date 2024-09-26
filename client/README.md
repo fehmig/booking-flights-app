@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# AppFellas Proje - Flight Booking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uygulama AppFellas firması için proje geliştirme aşamasında geliştirilmiştir. Uygulamanın amacı Bir havalimanı
+API’si ile basitçe uçuş bilgilerinin listelenebilmesi ve kullanıcı uçuş bilgilerinin basitçe
+kaydedilmesini sağlayacak bir web uygulaması oluşturulmasıdır. Uygulamanın ara yüzü React ile geliştirilmiştir. Server kısmı için Node.js - Express kullanılmıştır. Veriler MongoDB üzerinde tutulup, kullanılmıştır.
 
-## Available Scripts
+State yönetimi için Redux kullanılmıştır. redux, react-redux, redux-thunk, @redux-devtools/extension kütüphaneleri ile mimari başarılı bir şekilde oluşturulmuştur.
 
-In the project directory, you can run:
+Ara yüz iyileştirmeleri için CSS kodlarına ek olarak uyarı-bildirim bileşenleri için react-toastify kütüphanesi kullanılmıştır. Animatik ikonlar CSS kodları ile oluşturulmuştur. Tasarım responsive olarak kodlanmıştır, mobil görünüm için uygundur.
 
-### `npm start`
+Server kısmı MVC yapısına uygun olarak kodlanmıştır.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Görseller
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Ekran Görüntüsü 1](../client/src/assets/screenshoots/home.png)
+Ana ekran görünümü.
 
-### `npm test`
+![Ekran Görüntüsü 2](../client/src/assets/screenshoots/home2.png)
+Ana ekran görünümü (devam).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Ekran Görüntüsü 3](../client/src/assets/screenshoots/search.png)
+Filtreleme işlemleri.
 
-### `npm run build`
+![Ekran Görüntüsü 4](../client/src/assets/screenshoots/search2.png)
+Filtreleme işlemleri.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Ekran Görüntüsü 5](../client/src/assets/screenshoots/modal.png)
+Rezervasyon yapmak için uçuş seçinde çıkan onaylama modalı.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Ekran Görüntüsü 6](../client/src/assets/screenshoots/modal2.png)
+Rezervasyon onaylanınca çıkan yönlendirme modal içeriği.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Ekran Görüntüsü 7](../client/src/assets/screenshoots/my-flights.png)
+Rezervasyon yapılan uçuşların listelendiği "Uçuşlarım" ekranı.
 
-### `npm run eject`
+![Ekran Görüntüsü 8](../client/src/assets/screenshoots/mongodb.png)
+Rezervasyonların kaydedildiği veritabanı.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Ekran Görüntüsü 9](../client/src/assets/screenshoots/api.png)
+Uçuşların listelendiği API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## NOT
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Uçuşlara ait bilgiler API de yer alan bilgilerle kısıtlanmak zorunda kalmıştır, özel durumlardan dolayı proje 2 gün içerisinde tamamlanmış olup API kullanımında problem yaşanmıştır. API'den ulaşılan bilgiler görsellere eklenmiştir, sadece bu bilgiler kullanılabilmiştir. Örneğin origin bilgisi isim olarak alınamamış kalkış ve varış havalimanı kodları kullanılarak bir mantık oluşturulmaya çalışılmıştır. Uçuşlara ait fiyat bilgisine ulaşılamamıştır.
+Dolayısıyla filtreleme işlemleri kalkış-varış ve uçuş tarihleri üzerinden yapılabilmektedir.

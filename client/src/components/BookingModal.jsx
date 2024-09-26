@@ -58,7 +58,7 @@ const BookingModal = ({ flight, onClose, onConfirm }) => {
             <div className="airplane-icon">
               <FaPlane />
             </div>
-            <h2>Rezervasyon için onaylayın!</h2>
+            <h2>Confirm your reservation!</h2>
             <p className="modal-flight-info">
               <strong>{flight.prefixIATA} - {flight.route?.destinations?.[0]}</strong>
             </p>
@@ -73,8 +73,8 @@ const BookingModal = ({ flight, onClose, onConfirm }) => {
                 <span>Price:</span> ${flight.price}
               </p>
             </div>
-            <button onClick={handleConfirm} className="confirm-button">Onayla</button>
-            <button onClick={onClose} className="close-button">Kapat</button>
+            <button onClick={handleConfirm} className="confirm-button">Confirm</button>
+            <button onClick={onClose} className="close-button">Close</button>
           </>
         )}
       </div>
