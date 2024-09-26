@@ -50,7 +50,7 @@ Uçuşların listelendiği API.
 Uçuşlara ait bilgiler API de yer alan bilgilerle kısıtlanmak zorunda kalmıştır, özel durumlardan dolayı proje 2 gün içerisinde tamamlanmış olup API kullanımında problem yaşanmıştır. API'den ulaşılan bilgiler görsellere eklenmiştir, sadece bu bilgiler kullanılabilmiştir. Örneğin origin bilgisi isim olarak alınamamış kalkış ve varış havalimanı kodları kullanılarak bir mantık oluşturulmaya çalışılmıştır. Uçuşlara ait fiyat bilgisine ulaşılamamıştır.
 Dolayısıyla filtreleme işlemleri kalkış-varış ve uçuş tarihleri üzerinden yapılabilmektedir.
 
-## KULLANIM
+## Kullanım
 
 Proje ana dizinindeyken server klasörüne girip terminal üzerinden "npm start" komutu ile server kısmı çalıştırılmalıdır. Server is running on:  5000
 MongoDB Connected uyarıları konsolda görünüyorsa server başarılı bir şekilde çalışmaktadır.
