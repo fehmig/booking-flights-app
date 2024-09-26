@@ -13,7 +13,6 @@ client/.vscode/
 server/node_modules/
 server/logs/
 server/*.log
-server/.env
 server/coverage/
 server/dist/
 server/.DS_Store
