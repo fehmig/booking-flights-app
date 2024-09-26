@@ -12,31 +12,31 @@ Server kısmı MVC yapısına uygun olarak kodlanmıştır.
 
 ## Görseller
 
-![Ekran Görüntüsü 1](../client/src/assets/screenshoots/home.png)
+![Ekran Görüntüsü 1](./client/src/assets/screenshoots/home.png)
 Ana ekran görünümü.
 
-![Ekran Görüntüsü 2](../client/src/assets/screenshoots/home2.png)
+![Ekran Görüntüsü 2](./client/src/assets/screenshoots/home2.png)
 Ana ekran görünümü (devam).
 
-![Ekran Görüntüsü 3](../client/src/assets/screenshoots/search.png)
+![Ekran Görüntüsü 3](./client/src/assets/screenshoots/search.png)
 Filtreleme işlemleri.
 
-![Ekran Görüntüsü 4](../client/src/assets/screenshoots/search2.png)
+![Ekran Görüntüsü 4](./client/src/assets/screenshoots/search2.png)
 Filtreleme işlemleri.
 
-![Ekran Görüntüsü 5](../client/src/assets/screenshoots/modal.png)
+![Ekran Görüntüsü 5](./client/src/assets/screenshoots/modal.png)
 Rezervasyon yapmak için uçuş seçinde çıkan onaylama modalı.
 
-![Ekran Görüntüsü 6](../client/src/assets/screenshoots/modal2.png)
+![Ekran Görüntüsü 6](./client/src/assets/screenshoots/modal2.png)
 Rezervasyon onaylanınca çıkan yönlendirme modal içeriği.
 
-![Ekran Görüntüsü 7](../client/src/assets/screenshoots/my-flights.png)
+![Ekran Görüntüsü 7](./client/src/assets/screenshoots/my-flights.png)
 Rezervasyon yapılan uçuşların listelendiği "Uçuşlarım" ekranı.
 
-![Ekran Görüntüsü 8](../client/src/assets/screenshoots/mongodb.png)
+![Ekran Görüntüsü 8](./client/src/assets/screenshoots/mongodb.png)
 Rezervasyonların kaydedildiği veritabanı.
 
-![Ekran Görüntüsü 9](../client/src/assets/screenshoots/api.png)
+![Ekran Görüntüsü 9](./client/src/assets/screenshoots/api.png)
 Uçuşların listelendiği API.
 
 ## NOT
