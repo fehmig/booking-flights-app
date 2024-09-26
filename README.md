@@ -53,7 +53,7 @@ Dolayısıyla filtreleme işlemleri kalkış-varış ve uçuş tarihleri üzerin
 ## KULLANIM
 
 Proje ana dizinindeyken server klasörüne girip terminal üzerinden "npm start" komutu ile server kısmı çalıştırılmalıdır. Server is running on:  5000
-MongoDB Connected uyarılarını konsolda görüyorsa server başarılı bir şekilde çalışmaktadır.
+MongoDB Connected uyarıları konsolda görünüyorsa server başarılı bir şekilde çalışmaktadır.
 
 Ara yüz kısmı için ana dizindeyken client klasörüne girip "npm start" komutu ile projeyi derleyebiliriz.
 

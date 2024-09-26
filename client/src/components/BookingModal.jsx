@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/BookingModal.css';
 import { FaPlane } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { showConfirmation, setCountdown} from '../redux/actions/modalActions';
+import { showConfirmation, setCountdown } from '../redux/actions/modalActions';
 
 const BookingModal = ({ flight, onClose, onConfirm }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { userName, countdown, showConfirmation: isConfirmationShown } = useSelector((state) => state.modal);
+  const { countdown, showConfirmation: isConfirmationShown } = useSelector((state) => state.modal);
+  const [userName, setUserName] = useState('Fehmi Günay');
 
-  // rezervasyon işlemleri
+  // Rezervasyon işlemleri
   const handleConfirm = () => {
     const reservationData = {
       flightName: flight.flightName,
@@ -25,7 +26,7 @@ const BookingModal = ({ flight, onClose, onConfirm }) => {
     dispatch(showConfirmation(true));
   };
 
-  // modalda rezervasyon onaylandığı takdirde yönlendirmek için işlemler (geri sayım vs.)
+  // Modalda rezervasyon onaylandığı takdirde yönlendirmek için işlemler (geri sayım vs.)
   useEffect(() => {
     if (isConfirmationShown) {
       const timer = setInterval(() => {
@@ -34,7 +35,6 @@ const BookingModal = ({ flight, onClose, onConfirm }) => {
           clearInterval(timer);
           navigate('/myflights');    
         }
-        
       }, 1000);
       
       return () => clearInterval(timer);
@@ -72,6 +72,15 @@ const BookingModal = ({ flight, onClose, onConfirm }) => {
               <p className="modal-content-header-text">
                 <span>Price:</span> ${flight.price}
               </p>
+            </div>
+            <div className="input-container">
+              <label htmlFor="userName">Reservation Full Name:</label>
+              <input
+                type="text"
+                id="userName"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+              />
             </div>
             <button onClick={handleConfirm} className="confirm-button">Confirm</button>
             <button onClick={onClose} className="close-button">Close</button>
