@@ -19,7 +19,6 @@ const Navbar = () => {
     window.location = "/"
   }
   
-
   return (
     <nav className="navbar">
       <div onClick={goHome} className="navbar-left">
