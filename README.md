@@ -25,7 +25,7 @@ Filtreleme işlemleri.
 Filtreleme işlemleri.
 
 ![Ekran Görüntüsü 5](./client/src/assets/screenshoots/modal.png)
-Rezervasyon yapmak için uçuş seçinde çıkan onaylama modalı.
+Rezervasyon yapmak için uçuş seçince çıkan onaylama modalı.
 
 ![Ekran Görüntüsü 6](./client/src/assets/screenshoots/modal2.png)
 Rezervasyon onaylanınca çıkan yönlendirme modal içeriği.
