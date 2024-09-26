@@ -1,0 +1,113 @@
+.flight-search-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.trip-type-toggle {
+    display: flex;
+}
+
+.toggle-button {
+    width: 80px;
+    max-width: fit-content;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 12px;
+}
+
+.toggle-button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.toggle-button:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.toggle-button.active {
+    background-color: #6c3bb1;
+    color: white;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    max-height: fit-content;
+}
+
+
+.input-group:first-of-type {
+    margin-bottom: 10px; 
+}
+
+.input-field {
+    width: 46%; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+
+.input-left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left: 10px;
+}
+
+.input-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.input-field:not(:last-child) {
+    border-right: none; 
+}
+
+.input-field:focus {
+    border-color: #6c3bb1;
+    outline: none;
+}
+
+.show-flights-button {
+    width: 20%;
+    max-width: 100px;
+    padding: 8px;
+    background-color: #6c3bb1;
+    border-radius: 5px;
+    color: #fff; 
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.show-flights-button:hover {
+    background-color: #5a2e99; 
+    transform: scale(1.05);
+}

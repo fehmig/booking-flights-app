@@ -1,0 +1,27 @@
+.my-flights {
+    margin: 20px;
+  }
+  
+  .reservation-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .flight-info {
+    margin-bottom: 10px;
+  }
+  
+  .cancel-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: darkred;
+  }
+  

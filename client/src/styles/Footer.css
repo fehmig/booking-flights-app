@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    background-color: #f8f8fc;
+    color: #6c3bb1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 14px;
+    color: #010101;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 12px;
+      padding: 15px 0;
+    }
+  }
+  

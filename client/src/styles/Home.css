@@ -1,0 +1,52 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.left-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-gallery {
+  flex: 1;
+  margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .image-gallery {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+ 
+  .side-images {
+    max-width: 100%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center; 
+  }
+
+  .image-item {
+    width: 90%; 
+  }
+}
+
